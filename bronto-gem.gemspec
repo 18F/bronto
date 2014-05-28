@@ -8,11 +8,11 @@ Gem::Specification.new do |spec|
   spec.name          = "bronto-gem"
   spec.version       = BrontoGem::VERSION
   spec.authors       = ["Alan deLevie"]
-  spec.email         = ["adelevie@gmail.com"]
+  spec.email         = ["alan.delevie@gsa.gov"]
   spec.summary       = %q{Thesaurus gem}
   spec.description   = %q{Thesaurus gem}
   spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.license       = "Public Domain. See LICENSE.txt"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
