@@ -7,7 +7,7 @@ A thesaurus gem.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bronto-gem'
+gem 'bronto-gem', '0.0.2'
 ````
 
 And then execute:
