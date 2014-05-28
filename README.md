@@ -2,7 +2,7 @@
 
 A thesaurus gem.
 
-## Installation (pending)
+## Installation
 
 Add this line to your application's Gemfile:
 
