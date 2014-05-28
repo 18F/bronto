@@ -1,24 +1,55 @@
-# Bronto::Gem
+# BrontoGem
 
-TODO: Write a gem description
+A thesaurus gem.
 
-## Installation
+## Installation (pending)
 
 Add this line to your application's Gemfile:
 
-    gem 'bronto-gem'
+```ruby
+gem 'bronto-gem'
+````
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
+
 
 Or install it yourself as:
 
-    $ gem install bronto-gem
+```sh
+$ gem install bronto-gem
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'bronto-gem'
+
+synonyms = BrontoGem.lookup("fish") #=> 
+
+{
+  verb: {
+    syn: ["angle", "catch", "grab", "look for", "search", "seek", "take hold of"]
+  },
+  noun: {
+    syn: [
+      "aquatic vertebrate",
+     "food",
+     "individual",
+     "mortal",
+     "person",
+     "pisces",
+     "pisces the fishes",
+     "solid food",
+     "somebody",
+     "someone",
+     "soul"]
+  }
+}
+```
 
 ## Contributing
 
