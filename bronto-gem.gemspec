@@ -1,8 +1,8 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bronto/bronto-gem/version'
-require 'bronto/bronto-gem/lookup'
+require 'bronto-gem/version'
+#require 'bronto/bronto-gem/lookup'
 
 Gem::Specification.new do |spec|
   spec.name          = "bronto-gem"
