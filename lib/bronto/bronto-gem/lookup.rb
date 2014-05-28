@@ -1,3 +1,8 @@
+require 'wordnet'
+require 'wordnet-defaultdb'
+
+$lex = WordNet::Lexicon.new
+
 module BrontoGem
   def self.lookup(word)
     query = word.downcase
