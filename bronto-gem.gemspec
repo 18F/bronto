@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require_relative 'bronto-gem/version'
+require 'bronto/bronto-gem/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "bronto-gem"
-  spec.version       = Bronto::Gem::VERSION
+  spec.version       = BrontoGem::VERSION
   spec.authors       = ["Alan deLevie"]
   spec.email         = ["adelevie@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
