@@ -7,7 +7,7 @@ A thesaurus gem.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bronto', '0.1.0'
+gem 'bronto-gem', '0.1.0'
 ````
 
 And then execute:
@@ -20,7 +20,7 @@ $ bundle
 Or install it yourself as:
 
 ```sh
-$ gem install bronto
+$ gem install bronto-gem
 ```
 
 ## Usage
