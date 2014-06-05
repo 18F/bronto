@@ -2,7 +2,7 @@
 
 A thesaurus gem.
 
-## Installation
+## Installation (pending)
 
 Add this line to your application's Gemfile:
 
@@ -20,13 +20,13 @@ $ bundle
 Or install it yourself as:
 
 ```sh
-$ gem install bronto-gem
+$ gem install bronto
 ```
 
 ## Usage
 
 ```ruby
-require 'bronto-gem'
+require 'bronto'
 
 synonyms = Bronto::Thesaurus.new.lookup("fish") #=> 
 
