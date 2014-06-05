@@ -1,3 +1,3 @@
-module BrontoGem
-  VERSION = "0.0.2"
+module Bronto
+  VERSION = "0.1.0"
 end
