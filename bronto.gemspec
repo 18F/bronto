@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bronto/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bronto"
+  spec.name          = "bronto-gem"
   spec.version       = Bronto::VERSION
   spec.authors       = ["Alan deLevie"]
   spec.email         = ["alan.delevie@gsa.gov"]
