@@ -7,7 +7,7 @@ A thesaurus gem.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bronto-gem', '0.0.2'
+gem 'bronto', '0.1.0'
 ````
 
 And then execute:
@@ -28,7 +28,7 @@ $ gem install bronto-gem
 ```ruby
 require 'bronto-gem'
 
-synonyms = BrontoGem.lookup("fish") #=> 
+synonyms = Bronto::Thesaurus.new.lookup("fish") #=> 
 
 {
   verb: {
@@ -36,7 +36,7 @@ synonyms = BrontoGem.lookup("fish") #=>
   },
   noun: {
     syn: [
-      "aquatic vertebrate",
+    "aquatic vertebrate",
      "food",
      "individual",
      "mortal",
@@ -46,14 +46,15 @@ synonyms = BrontoGem.lookup("fish") #=>
      "solid food",
      "somebody",
      "someone",
-     "soul"]
+     "soul"
+     ]
   }
 }
 ```
 
 ## Contributing
 
-1. Fork it ( https://github.com/adelevie/bronto-gem/fork )
+1. Fork it ( https://github.com/18F/bronto/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -61,4 +62,4 @@ synonyms = BrontoGem.lookup("fish") #=>
 
 ## License
 
-See `LICENSE.txt`
+Public Domain. See `LICENSE.txt`
