@@ -24,10 +24,12 @@ $ gem install bronto-gem
 
 ## Usage
 
+### In Your Application
+
 ```ruby
 require 'bronto'
 
-synonyms = Bronto::Thesaurus.new.lookup("fish") #=> 
+synonyms = Bronto::Thesaurus.new.lookup("fish") #=>
 
 {
   verb: {
@@ -49,6 +51,23 @@ synonyms = Bronto::Thesaurus.new.lookup("fish") #=>
      ]
   }
 }
+```
+
+### Command Line
+
+Bronto also ships with a command line interface, aptly named `bronto`.
+`bronto` takes a list of words you would like to find synonyms for and
+outputs them:
+
+```text
+~$ bronto fish capitol
+Fetching synonyms for 'fish'...
+  verb: angle, catch, grab, look for, search, seek, take hold of
+  noun: aquatic vertebrate, food, individual, mortal, person, pisces, pisces the fishes, solid food, somebody, someone, soul
+
+Fetching synonyms for 'mortal'...
+  noun: being, causal agency, causal agent, cause, individual, organism, person, somebody, someone, soul
+  adjective satellite: deadly, deathly
 ```
 
 ## Contributing
