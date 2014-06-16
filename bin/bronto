@@ -1,0 +1,30 @@
+#! /usr/bin/env ruby
+
+require 'mercenary'
+require File.expand_path("../../lib/bronto.rb", __FILE__)
+
+Mercenary.program(:bronto) do |b|
+  b.version Bronto::VERSION
+  b.syntax  'bronto <word>'
+
+  b.action do |args, _|
+    if args.size < 1
+      puts "Error: no word provided."
+      puts b
+      abort
+    end
+
+    args.each do |word|
+      puts "Fetching synonyms for '#{word}'..."
+      synonyms = Bronto::Thesaurus.new.lookup(word)
+      if synonyms.nil? || synonyms.empty?
+        puts "  No results."
+      else
+        synonyms.each do |type, vals|
+          puts "  #{type}: #{vals[:syn].join(", ")}"
+        end
+      end
+      puts
+    end
+  end
+end
